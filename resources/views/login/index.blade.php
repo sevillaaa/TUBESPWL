@@ -130,7 +130,7 @@
         </div>
       </div>
     </div>
-  </section>
+    </section>
   <!-- Section: Design Block -->
 
 @endsection

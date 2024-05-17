@@ -33,12 +33,6 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/product', function () {
-    return view('product', [
-        "title" => "Product",
-        'active' => 'product'
-    ]);
-});
 
 //login
 Route::get('/login', [LoginController::class , 'index'])->name('login')->middleware('guest');
@@ -52,13 +46,3 @@ Route::get('/register', [RegisterController::class , 'index'])->middleware('gues
 Route::post('/register', [RegisterController::class , 'store']);
 
 Route::get('/dashboard-user', [DasboardUserController::class, 'index']);
-
-Route::prefix('/dashboard-admin')->middleware('auth')->group(function () {
-    // dashboard admin
-    Route::get('/', [DashboardAdminController::class, 'index']);
-});
-
-// category
-Route::resource('/categories', CategoryController::class);
-// product
-Route::resource('/products', ProductController::class);
