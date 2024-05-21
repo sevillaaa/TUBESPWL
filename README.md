@@ -49,7 +49,7 @@ Password : Adminsatoto <br>
 -   Github
 -   PHP 8.2.12
 -   MYSQL
--   Laravel 10
+-   Laravel 9.45.1
 -   Bootstrap 7
 -   Composer
 
