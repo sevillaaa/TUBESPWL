@@ -12,7 +12,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
-    <link rel="icon" type="image/x-icon" href="/images/logos/LOGOtext.png">
+    <link rel="icon" type="image/x-icon" href="{{asset('')}}">
     <style>
         html {
             scroll-behavior: smooth;

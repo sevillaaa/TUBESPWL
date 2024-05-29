@@ -96,6 +96,23 @@ Route::prefix('admin')->middleware('admin')->group(function () {
 // --------------------------------------------------------------------------//
 
 
+
+
+// ------------------- client routes --------------------------------------- //
+
+Route::get('/reservations/{car}', [ReservationController::class, 'create'])->name('car.reservation')->middleware('auth', 'restrictAdminAccess');
+Route::post('/reservations/{car}', [ReservationController::class, 'store'])->name('car.reservationStore')->middleware('auth', 'restrictAdminAccess');
+
+Route::get('/reservations', function () {
+
+    $reservations = Reservation::where('user_id', Auth::user()->id)->orderBy('created_at', 'desc')->get();
+    return view('clientReservations', compact('reservations'));
+})->name('clientReservation')->middleware('auth', 'restrictAdminAccess');
+
+
+route::get('invoice/{reservation}', [invoiceController::class, 'invoice'])->name('invoice')->middleware('auth', 'restrictAdminAccess');
+
+
 //---------------------------------------------------------------------------//
 
 
