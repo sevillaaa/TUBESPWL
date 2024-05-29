@@ -11,7 +11,7 @@ Website seperti Real Rental Mobil berusaha untuk memberikan kemudahan bagi pengg
 1. 231402058 - Sevilla Claudia Depari - Front-End, Back-End, DBA
 2. 231402122 - Susi Pujiarti Butar-butar - Front-End
 3. 231402019 - Gladies Margaret Sinaga - Front-End
-4. 231402013 - Euprasia Enjelika Situmorang - PPT
+4. 231402013 - Euprasia Enjelika Situmorang - Front-End,PPT
 
 ## Fitur Utama
 
