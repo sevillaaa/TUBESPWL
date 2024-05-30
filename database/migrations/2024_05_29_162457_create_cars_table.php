@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('quantity');
             $table->string('status')->default('available');
+            $table->string('insurance_status')->default('active');
             $table->timestamps();
         });
     }
