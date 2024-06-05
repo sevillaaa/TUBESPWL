@@ -7,7 +7,7 @@ Front-End, Back-End (Login Register User & Admin)
 Gladies Margaret Sinaga - 231402019
 Front-End, Back-End (Category Car & Search)
 Euprasia Enjelika Situmorang - 231402013
-Front-End (Readme & PPT)
+Front-End (auth & PPT)
 
 # Real Rent Car
 Real Rental Mobil adalah sebuah situs web yang menyediakan layanan penyewaan mobil. Website ini biasanya menawarkan berbagai jenis mobil untuk disewa, mulai dari mobil ekonomi hingga mobil mewah, sesuai dengan kebutuhan dan anggaran pelanggan. Beberapa fitur umum yang biasanya terdapat pada website rental mobil seperti ini adalah:
