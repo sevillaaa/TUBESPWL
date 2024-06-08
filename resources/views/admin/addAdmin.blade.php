@@ -69,7 +69,7 @@
                         </div>
                     </div>
 
-                    <div class="md:w-1/3 mb-2">
+                    <!-- <div class="md:w-1/3 mb-2">
                         <p>OR</p>
                     </div>
 
@@ -77,7 +77,7 @@
                         <input
                             class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none "
                             id="file_input" type="file" name="avatar_choose">
-                    </div>
+                    </div> -->
 
                 </div>
 

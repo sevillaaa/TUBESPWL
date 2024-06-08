@@ -12,10 +12,11 @@ use App\Http\Controllers\addNewAdminController;
 use App\Http\Controllers\invoiceController;
 use App\Http\Controllers\AdminAuth\LoginController;
 use App\Http\Controllers\carSearchController;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use App\Models\User;
 use App\Models\Car;
 use App\Models\Reservation;
-
+use Illuminate\Http\Request;
 
 
 // ------------------- guest routes --------------------------------------- //
@@ -100,6 +101,26 @@ Route::prefix('admin')->middleware('admin')->group(function () {
 
 
 // ------------------- client routes --------------------------------------- //
+Auth::routes(['verify' => true]);
+
+// After login, if the user is not verified, redirect to this route.
+Route::get('/email/verify', function () {
+    return view('auth.verify-email');
+})->middleware('auth')->name('verification.notice');
+
+// The route that the user will click in the verification email.
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+
+    return redirect('/');
+})->middleware(['auth', 'signed'])->name('verification.verify');
+
+// Resend verification link if the user didn't receive the email.
+Route::post('/email/verification-notification', function (Request $request) {
+    $request->user()->sendEmailVerificationNotification();
+
+    return back()->with('message', 'Verification link sent!');
+})->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
 Route::get('/reservations/{car}', [ReservationController::class, 'create'])->name('car.reservation')->middleware('auth', 'restrictAdminAccess');
 Route::post('/reservations/{car}', [ReservationController::class, 'store'])->name('car.reservationStore')->middleware('auth', 'restrictAdminAccess');
