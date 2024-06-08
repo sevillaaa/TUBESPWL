@@ -1,12 +1,12 @@
 # Siapa pembuat web aplikasi ini?
 Tim pengembang: Kelompok 6
-Sevilla Claudia Depari - 231402058
-Back-End & Database Administrator (Reservation, Insurances, Invoice)
-Susi Pujiarti Butar-butar - 231402122
+- Sevilla Claudia Depari - 231402058
+Back-End & Database Administrator (Reservation, Insurances, Invoice, Verifikasi email)
+- Susi Pujiarti Butar-butar - 231402122
 Front-End, Back-End (Login Register User & Admin)
-Gladies Margaret Sinaga - 231402019
+- Gladies Margaret Sinaga - 231402019
 Front-End, Back-End (Category Car & Search)
-Euprasia Enjelika Situmorang - 231402013
+- Euprasia Enjelika Situmorang - 231402013
 Front-End (auth & PPT)
 
 # Real Rent Car
@@ -21,8 +21,8 @@ Website seperti Real Rental Mobil berusaha untuk memberikan kemudahan bagi pengg
 -   Login Registrasi user dan Autentikasi (nama, email, password, confirm password, forgot password, dan hassing password)
 -   Manajemen mobil (search & filter)
 -   Pemesanan dan manajemen sewa (select car & form order)
--   Dashboard Admin untuk mengelola mobil dan pemesanan (edit, add,  delate car, dan edit payment)
--   Dashboard Admin untuk mengelola Pengguna (details dan delate user)
+-   Dashboard Admin untuk mengelola mobil dan pemesanan (edit, add,  delete car, dan edit payment)
+-   Dashboard Admin untuk mengelola Pengguna (details dan delete user)
 
 ## Cara Instalasi ke Server Lokal :
 
